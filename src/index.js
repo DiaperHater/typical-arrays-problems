@@ -1,12 +1,16 @@
 
-exports.min = function min (array) {
+function min (array) {
   return 0;
 }
 
-exports.max = function max (array) {
+function max (array) {
   return 0;
 }
 
-exports.avg = function avg (array) {
+function avg (array) {
   return 0;
 }
+
+exports.min = min;
+exports.max = max;
+exports.avg = avg;
