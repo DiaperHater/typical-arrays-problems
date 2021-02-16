@@ -1,6 +1,18 @@
 
 function min (array) {
-  return 0;
+
+	if(array === undefined || array.length === 0){
+		return 0;
+	}
+
+	let nMin = array[0];
+	array.forEach((n)=>{
+		if(n < nMin){
+			nMin = n;
+		}
+	});
+
+	return nMin;
 }
 
 function max (array) {
