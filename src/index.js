@@ -16,7 +16,18 @@ function min (array) {
 }
 
 function max (array) {
-  return 0;
+  if(array === undefined || array.length === 0){
+		return 0;
+	}
+
+	let nMax = array[0];
+	array.forEach((n)=>{
+		if(n > nMax){
+			nMax = n;
+		}
+	});
+
+	return nMax;
 }
 
 function avg (array) {
