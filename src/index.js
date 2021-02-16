@@ -31,7 +31,17 @@ function max (array) {
 }
 
 function avg (array) {
-  return 0;
+	if(array === undefined || array.length === 0) {
+		return 0;
+	}
+
+	let sum = 0;
+	array.forEach((n)=>{
+		sum += n;
+	});
+
+	return sum / array.length;
+
 }
 
 exports.min = min;
